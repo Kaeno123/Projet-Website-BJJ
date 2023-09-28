@@ -1,0 +1,78 @@
+body{
+    margin: auto;
+
+}
+#container{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    padding-inline: 25px;
+    background-color: rgb(95, 164, 255);
+}
+a{
+    text-decoration: none;
+    color: white;
+
+}
+
+header{
+    display: grid;
+    grid-template-columns: 10% 25% 30% 25% 10%;
+    background-color: rgb(91, 91, 255);
+}
+#logo{
+    grid-column: 1;
+    height: 110px;
+    width: auto;
+}
+h1{
+    
+    color: white;
+    
+}
+#jjb1{
+    grid-column: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+
+}
+h2{
+    display: flex;
+    width: 100%;
+    justify-content: center ;
+}
+p{
+    margin-top: 0px;
+    padding-inline: 30px;
+}
+footer{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: rgb(91, 91, 255) ;
+    color: white;
+}
+
+#adress{
+    padding-top: 15px;
+    grid-area: 0/1;
+}
+#plan{
+    padding-top: 15px;
+    grid-area: 0/2;
+}
+h4{
+    margin-top: 0px;
+}
+li{
+    padding: 1px;
+    list-style-type: none;
+}
