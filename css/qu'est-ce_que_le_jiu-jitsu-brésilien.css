@@ -58,19 +58,21 @@ a{
 a:hover{
     text-decoration: underline;
 }
-#hist{
+#qujjb{
     opacity: 50%;
     text-decoration: none;
 }
 
 /* PRINCIPAL */
 main{
+
     display: flex;
     flex-wrap: wrap;
-    background-color: #F6D800;
-    justify-content: center;
     align-items: center;
-    height: 40%;
+    justify-content: center;
+    background-color: #F6D800;
+
+
 }
 h2{
     display: flex;
@@ -81,6 +83,14 @@ h2{
     font-variant: small-caps;
     padding-inline: 30%;
 }
+h4{
+    background-color:#002277;
+    padding: 0.5%;
+    width: 70%;
+    color: white;
+    font-size: large;
+    text-align: center;
+}
 p{
     display: flex;
     margin-top: 0px;
@@ -89,31 +99,36 @@ p{
     font-size: larger;
     text-align: justify;
 }
+#quotes{
+    text-align: center;
+    color: #002277;
+    width: 45%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-style: italic;
+}
+.txt{
+    margin-top: 0px;
+    width: 45%;
+}
+.list{
+    list-style-type: disc;
+    font-size: larger;
+    padding-left: 35px;
+}
+.img1{
+    padding: 10px;
+    border: 5px solid #002277;
+    margin: 15px;
+    margin-bottom: 30px; 
+}
 .img{
     display: flex;
     justify-content: center;
 }
-#helio{
-    height: 400px;
-    width: auto;
-    padding: 10px;
-    border: 5px solid #002277;
-    margin: 15px;
-    margin-bottom: 0px;
-}
-#helio:hover{
-    height: 410px;
-    width: auto;
-    opacity: 0.8;
-    border-color: #009638;
-    transition: 0.9s;
-}
-#legende{
-    justify-content: center;
-    font-style: italic;
-    color: #002277;
-    margin: 0px;
-    margin-bottom: 5px;
+.img1:hover{
+    border-color:#009638;
+    transition: 1s;
 }
 iframe{
     padding: 10px;
@@ -122,7 +137,7 @@ iframe{
     margin-bottom: 30px;
 }
 iframe:hover{
-    border-color: rgb(91, 91, 255);
+    border-color: #009638;
     transition: 1s;
 }
 
@@ -144,19 +159,24 @@ footer{
     padding-top: 15px;
     grid-area: 0/2;
 }
-h4{
+#hplan{
+    padding-left: 0px;
+    font-size: 1em;
+    background-color: #002277;
     margin-top: 0px;
+    margin-left: 0px;
 }
 li{
     padding: 1px;
     list-style-type: none;
 }
 
+
 /* RESPONSIVE DESIGN */
 @media screen and (max-width:950px) {
 
     header{
-        height: 12%;
+        height: 15%;
         font-size: 1.8vw;
         display: flex;
         align-items: center;
@@ -207,17 +227,30 @@ li{
        padding-bottom: 0px; 
     }
 
+    .img1{
+        width: 70%;
+    }
+    #gf{
+        width: 50%;
+    }
+    iframe{
+        width: 70%;
+    }
     main{
         width: 100%;
 
     }
-    .h3{
-        font-size: 0.8em;
-        padding-inline: 5%;
+    h4{
+        width: 90%;
     }
     p {
         width: 90%;
         font-size: 1em;
+    }
+    .list{
+        list-style-type: disc;
+        font-size: 0.9em;
+        padding-left: 5%;
     }
   }
 
@@ -230,8 +263,16 @@ li{
     h2{
         font-size: 100%;
     }
-
-    
+    .h3{
+        font-size: 0.8em;
+        padding-inline: 5%;
+    }
+    h4{
+        font-size: 0.8em;
+    }
+    #quotes{
+        width: 80%;
+    }
     footer{
         grid-template-columns: 40% 60%;
     }

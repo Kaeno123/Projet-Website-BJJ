@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../css/Contact.css">
+    <script src="../js/allPages.js" defer></script>
+
+    <!--
+        Auteur: Kaeno Eyer
+        Date: 22.09.23
+        Description: Site web de Jiu-jitsu-brésilien - page d'accueil
+    -->
+</head>
+<body>
+    <div id="container">
+        <!--Haut de page-->
+        <header>
+            <!--Logo du Website-->
+            <a href="page_d'accueil_siteweb.html">
+                <img id="logo" src="../media/logo.png" alt="logo">
+            </a>
+
+            <a id="jjb1" href="page_d'accueil_siteweb.html">
+                <h1>Site de Jiu-jitsu brésilien</h1>
+            </a>
+
+            <!--bouton navigation pour responsive design-->
+            <div class="toggle-btn" onclick="showNav()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+    
+        </header>
+
+        <!--Navigation-->
+    <nav id="nav">
+        <ul id="elementnav" >
+            <li class="nav1">
+                <a href="page_d'accueil_siteweb.html">Page d'accueil</a>
+            </li>
+
+            <li class="nav1">
+                <a href="qu'est-ce_que_le_jiu-jitsu-brésilien.html">Qu'est-ce que le Jiu-jitsu brésilien</a>
+            </li>
+
+            <li class="nav1">
+                <a href="Histoire_siteweb.html">Histoire</a>
+            </li>
+
+            <li class="nav1">
+                <a id="cons" href="Contact.html">Contact</a>
+            </li>
+
+            <li class="nav1" id="lastPageNav">
+                <a href="Sources.html">Sources</a>
+            </li>
+
+    </nav>
+
+        <!--Contenu de la page-->
+        <main>
+            <h2>Contact</h2>
+
+            <h3 id="question">Une question, un besoin, un projet ?</h3>
+
+            <h4 id="contact">Contactez-moi !</h4>
+
+
+            <!--Formulaire-->
+            <form action="" method="post">
+                <input class="formi" type="text" id="name" placeholder="Prénom (requis)" required>
+                <input class="formi" type="text" id="surname" placeholder="Nom de famille (requis)" required>
+                <input class="formi" type="email" name="email" id="email" placeholder="Email (requis)" required>
+                <input class="formi" type="tel" name="tel" id="tel" placeholder="Numéro de téléphone">
+                <textarea class="formi" name="" id="comment" cols="30" rows="3" placeholder="Commentaire (requis)" required></textarea>
+                <input class="formi" type="submit" value="Envoyer">
+
+            </form>
+           
+            </main>
+
+        <!--Bas de page-->
+        <footer>
+            <ul id="adress">
+                <li>
+                    Eyer Kaeno
+                </li>
+
+                <li>
+                    <a href="mailto:pg43msk@eduvaud.ch">Mon email</a>
+                </li>
+            </ul>
+
+            <ul id="plan">
+                <li>
+                   <h4 id="hplan">Plan du site</h4> 
+                </li>
+
+                <li>
+                    <a href="page_d'accueil_siteweb.html">Page d'accueil</a>
+                </li>
+
+                <li>
+                    <a href="qu'est-ce_que_le_jiu-jitsu-brésilien.html">Qu'est-ce que le Jiu-jitsu-brésilien</a>
+                </li>
+
+                <li>
+                    <a href="Histoire_siteweb.html">Histoire</a>
+                </li>
+
+                <li>
+                    <a href="Contact.html">Contact</a>
+                </li>
+
+                <li>
+                    <a href="Sources.html">Sources</a>
+                </li>
+            </ul>
+
+        </footer>
+
+
+    </div>
+    
+</body>
+</html>

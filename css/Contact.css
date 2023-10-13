@@ -1,11 +1,11 @@
 
 body{
-    margin: auto;
     width: 100%;
+    margin: auto;
 }
 #container{
-    font-family: Arial, Helvetica, sans-serif;
     width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* ENTÊTE */
@@ -58,72 +58,67 @@ a{
 a:hover{
     text-decoration: underline;
 }
-#hist{
+#cons{
     opacity: 50%;
     text-decoration: none;
 }
 
 /* PRINCIPAL */
 main{
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #F6D800;
-    justify-content: center;
-    align-items: center;
-    height: 40%;
+    display: grid;
+    height: 610px;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 25% 36% 34%;
+    background-color:  #f6d900;
 }
 h2{
+    grid-area: 1/1/1/3;
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     justify-content: center ;
 }
-.h3{
-    font-variant: small-caps;
-    padding-inline: 30%;
-}
-p{
-    display: flex;
-    margin-top: 0px;
-    margin-bottom: 1.5%;
-    width: 70%;
-    font-size: larger;
-    text-align: justify;
-}
-.img{
-    display: flex;
-    justify-content: center;
-}
-#helio{
-    height: 400px;
-    width: auto;
-    padding: 10px;
-    border: 5px solid #002277;
-    margin: 15px;
-    margin-bottom: 0px;
-}
-#helio:hover{
-    height: 410px;
-    width: auto;
-    opacity: 0.8;
-    border-color: #009638;
-    transition: 0.9s;
-}
-#legende{
-    justify-content: center;
-    font-style: italic;
+#question{
+    grid-area: 2/1;
+    font-size: 3em;
     color: #002277;
-    margin: 0px;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
+    padding-left: 2%;
 }
-iframe{
-    padding: 10px;
-    border: 5px solid #002277;
-    margin: 15px;
-    margin-bottom: 30px;
+#contact{
+    margin-top: 0px;
+    grid-area: 3/1;
+    font-size: 2em;
+    padding-left: 2%;
 }
-iframe:hover{
-    border-color: rgb(91, 91, 255);
-    transition: 1s;
+/* formulaire */
+form{
+    background-color:#002277;
+    padding: 25px;
+    margin: 10px;
+    margin-left: 15%;
+    margin-right: 20%;
+    border-radius: 25px;
+    grid-area: 2/2/4/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.formi{
+    width: 80%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    
+}
+#comment{
+    resize: vertical;
+    max-height: 180px;
+    min-height: 15px;
 }
 
 /* PIED DE PAGE */
@@ -136,6 +131,7 @@ footer{
     bottom: 0%;
     width: 100%;
 }
+
 #adress{
     padding-top: 15px;
     grid-area: 0/1;
@@ -144,8 +140,12 @@ footer{
     padding-top: 15px;
     grid-area: 0/2;
 }
-h4{
+#hplan{
+    padding-left: 0px;
+    font-size: 1em;
+    background-color: #002277;
     margin-top: 0px;
+    margin-left: 0px;
 }
 li{
     padding: 1px;
@@ -153,7 +153,13 @@ li{
 }
 
 /* RESPONSIVE DESIGN */
-@media screen and (max-width:950px) {
+@media screen and (min-width:951px) and (max-width:1115px) {
+    p {
+        width: 80%;
+    }
+  }
+
+@media screen and (max-width:951px) {
 
     header{
         height: 12%;
@@ -209,16 +215,41 @@ li{
 
     main{
         width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: fit-content;
 
     }
-    .h3{
-        font-size: 0.8em;
-        padding-inline: 5%;
+    #question{
+        font-size: 2.5em;
+        text-align: center;
+        padding-right: 2%;
+        padding-left: 2%;
     }
-    p {
-        width: 90%;
-        font-size: 1em;
+    #contact{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.8em;
+        padding-right: 2%;
+        padding-left: 2%;
     }
+    form{
+        background-color: #002277;
+        padding: 25px;
+        margin: 10px;
+        margin-left: 15%;
+        margin-right: 20%;
+        border-radius: 25px;
+        grid-area: 2/2/4/3;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 15%;
+    }
+
   }
 
   @media screen and (max-width:590px) {

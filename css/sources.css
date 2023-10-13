@@ -58,84 +58,65 @@ a{
 a:hover{
     text-decoration: underline;
 }
-#hist{
+#src{
     opacity: 50%;
     text-decoration: none;
 }
+
+
 
 /* PRINCIPAL */
 main{
     display: flex;
     flex-wrap: wrap;
-    background-color: #F6D800;
-    justify-content: center;
-    align-items: center;
-    height: 40%;
+    background-color:#F6D800;
+    height: 610px;
+
 }
 h2{
     display: flex;
     width: 100%;
     justify-content: center ;
 }
-.h3{
-    font-variant: small-caps;
-    padding-inline: 30%;
+#src1{
+    padding-left: 0px;
+    margin-inline: 25%;
+}
+li{
+    margin-bottom: 3%;
+}
+.list{
+    font-size: 2em;
+    color: black;
+}
+.list:hover{
+    font-size: 2.1em;
+    color: #002277;
+    transition: 0.8s;
 }
 p{
     display: flex;
     margin-top: 0px;
-    margin-bottom: 1.5%;
-    width: 70%;
+    padding: 30px;
+    padding-right: 0px;
     font-size: larger;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
     text-align: justify;
-}
-.img{
-    display: flex;
-    justify-content: center;
-}
-#helio{
-    height: 400px;
-    width: auto;
-    padding: 10px;
-    border: 5px solid #002277;
-    margin: 15px;
-    margin-bottom: 0px;
-}
-#helio:hover{
-    height: 410px;
-    width: auto;
-    opacity: 0.8;
-    border-color: #009638;
-    transition: 0.9s;
-}
-#legende{
-    justify-content: center;
-    font-style: italic;
-    color: #002277;
-    margin: 0px;
-    margin-bottom: 5px;
-}
-iframe{
-    padding: 10px;
-    border: 5px solid #002277;
-    margin: 15px;
-    margin-bottom: 30px;
-}
-iframe:hover{
-    border-color: rgb(91, 91, 255);
-    transition: 1s;
 }
 
 /* PIED DE PAGE */
 footer{
     display: grid;
     grid-template-columns: 50% 50%;
-    background-color: #002277 ;
+    background-color:#002277;
     color: white;
     position: relative;
     bottom: 0%;
     width: 100%;
 }
+
 #adress{
     padding-top: 15px;
     grid-area: 0/1;
@@ -150,9 +131,16 @@ h4{
 li{
     padding: 1px;
     list-style-type: none;
+    margin-bottom: 0%;
 }
 
 /* RESPONSIVE DESIGN */
+@media screen and (min-width:951px) and (max-width:1115px) {
+    p {
+        width: 80%;
+    }
+  }
+
 @media screen and (max-width:950px) {
 
     header{
@@ -208,16 +196,17 @@ li{
     }
 
     main{
+        height: fit-content;
+        min-height: 500px ;
         width: 100%;
 
     }
-    .h3{
-        font-size: 0.8em;
-        padding-inline: 5%;
+    #src1{
+        margin-inline: 2%;
     }
-    p {
-        width: 90%;
-        font-size: 1em;
+    .sr {
+        padding-inline: 5%;
+        font-size: 2vw;
     }
   }
 
